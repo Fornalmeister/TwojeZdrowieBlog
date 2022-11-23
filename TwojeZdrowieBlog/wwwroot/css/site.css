@@ -1,18 +1,114 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+/*GLOBAL*/
+
+.own-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-prim-color {
+    color: #f44336;
+}
+
+/*MENU*/
+
+nav {
+    background-color: #FFF;
+}
+
+.text-menu {
+    font-size: 26px;
+    color: #000 !important;
+    transition: color 0.5s;
+}
+
+    .text-menu:hover {
+        color: #ba000d !important;
+    }
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    margin: 0;
+    padding: 24rem;
+    text-align: center;
+    background-image: url('../images/3_Easy-Resize.com.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*ABOUT US*/
+
+.text-about-us {
+    font-size: 18px;
+}
+
+/*CONTACT*/
+
+.contact {
+    display: flex;
+    padding: 25rem;
+    margin: 0;
+    text-align: center;
+    background-image: url('../images/2_Easy-Resize.com.jpg');
+    background-size: cover;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+p a i{
+    color: #000;
+    font-weight: 400;
+    transition: 0.5s color;
+}
+
+    p a i:hover {
+        color: #f44336;
+    }
+
+.about-us-margins {
+    margin: 1rem 2rem;
+}
+
+@media only screen and (max-width: 1400px) {
+    .header {
+        padding: 15rem;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    .header{
+        padding: 8rem;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+        padding: 5rem;
+    }
 }
